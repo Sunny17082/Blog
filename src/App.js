@@ -1,24 +1,100 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+		<header>
+        	<a href="" className="logo">MyBlog</a>
+        	<nav>
+          		<a href="#">Login</a>
+          		<a href="#">Register</a>
+        	</nav>
+      	</header>
+	  	<div className="post">
+			<div className = "image">
+				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
+			</div>
+			<div className="text">
+				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+				<p className="info">
+					<a className="author">John Doe</a>
+					<time>2023-01-06 20:26</time>
+				</p>
+				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
+				</p>
+			</div>
+	  	</div>
+	  	<div className="post">
+			<div className = "image">
+				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
+			</div>
+			<div className="text">
+				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+				<p className="info">
+					<a className="author">John Doe</a>
+					<time>2023-01-06 20:26</time>
+				</p>
+				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
+				</p>
+			</div>
+	  	</div>
+		  <div className="post">
+			<div className = "image">
+				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
+			</div>
+			<div className="text">
+				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+				<p className="info">
+					<a className="author">John Doe</a>
+					<time>2023-01-06 20:26</time>
+				</p>
+				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
+				</p>
+			</div>
+	  	</div>
+		  <div className="post">
+			<div className = "image">
+				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
+			</div>
+			<div className="text">
+				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+				<p className="info">
+					<a className="author">John Doe</a>
+					<time>2023-01-06 20:26</time>
+				</p>
+				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
+				</p>
+			</div>
+	  	</div>
+		  <div className="post">
+			<div className = "image">
+				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
+			</div>
+			<div className="text">
+				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+				<p className="info">
+					<a className="author">John Doe</a>
+					<time>2023-01-06 20:26</time>
+				</p>
+				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
+				</p>
+			</div>
+	  	</div>
+		  <div className="post">
+			<div className = "image">
+				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
+			</div>
+			<div className="text">
+				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+				<p className="info">
+					<a className="author">John Doe</a>
+					<time>2023-01-06 20:26</time>
+				</p>
+				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
+				</p>
+			</div>
+	  	</div>
+    </main>
   );
 }
 
