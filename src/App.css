@@ -1,5 +1,6 @@
 *{
 	color: #333;
+	box-sizing: border-box;
 }
 
 main {
@@ -67,4 +68,33 @@ div.post p.summary {
 
 time {
 	color: #888;
+}
+
+form.login, form.register {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+input {
+	display: block;
+	margin-bottom: 5px;
+	width: 100%;
+	border: 2px solid #ddd;
+	padding: 5px 8px;
+	border-radius: 5px;
+	background-color: #eee;
+}
+
+button {
+	width: 100%;
+	display: block;
+	background-color: #555;
+	border: 0;
+	color: #fff;
+	border-radius: 5px;
+	padding: 8px 0;
+}
+
+form h1 {
+	text-align: center;
 }

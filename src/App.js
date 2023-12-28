@@ -1,100 +1,21 @@
 import './App.css';
+import Post from "./components/Post"
+import Header from "./components/Header"
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import IndexPage from "./components/Pages/IndexPage"
+import LoginPage from './components/Pages/LoginPage';
+import RegisterPage from './components/Pages/RegisterPage';
 
 function App() {
   return (
-    <main>
-		<header>
-        	<a href="" className="logo">MyBlog</a>
-        	<nav>
-          		<a href="#">Login</a>
-          		<a href="#">Register</a>
-        	</nav>
-      	</header>
-	  	<div className="post">
-			<div className = "image">
-				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
-			</div>
-			<div className="text">
-				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-				<p className="info">
-					<a className="author">John Doe</a>
-					<time>2023-01-06 20:26</time>
-				</p>
-				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
-				</p>
-			</div>
-	  	</div>
-	  	<div className="post">
-			<div className = "image">
-				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
-			</div>
-			<div className="text">
-				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-				<p className="info">
-					<a className="author">John Doe</a>
-					<time>2023-01-06 20:26</time>
-				</p>
-				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
-				</p>
-			</div>
-	  	</div>
-		  <div className="post">
-			<div className = "image">
-				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
-			</div>
-			<div className="text">
-				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-				<p className="info">
-					<a className="author">John Doe</a>
-					<time>2023-01-06 20:26</time>
-				</p>
-				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
-				</p>
-			</div>
-	  	</div>
-		  <div className="post">
-			<div className = "image">
-				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
-			</div>
-			<div className="text">
-				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-				<p className="info">
-					<a className="author">John Doe</a>
-					<time>2023-01-06 20:26</time>
-				</p>
-				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
-				</p>
-			</div>
-	  	</div>
-		  <div className="post">
-			<div className = "image">
-				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
-			</div>
-			<div className="text">
-				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-				<p className="info">
-					<a className="author">John Doe</a>
-					<time>2023-01-06 20:26</time>
-				</p>
-				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
-				</p>
-			</div>
-	  	</div>
-		  <div className="post">
-			<div className = "image">
-				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
-			</div>
-			<div className="text">
-				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-				<p className="info">
-					<a className="author">John Doe</a>
-					<time>2023-01-06 20:26</time>
-				</p>
-				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
-				</p>
-			</div>
-	  	</div>
-    </main>
+	<Routes>
+		<Route path='/' element = {<Layout />}>
+			<Route index element={<IndexPage/>} />
+			<Route path='/login' element = {<LoginPage/>}/>
+			<Route path='/register' element = {<RegisterPage/>}/>
+		</Route>
+	</Routes>
   );
 }
 
