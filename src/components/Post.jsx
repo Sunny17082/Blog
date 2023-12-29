@@ -1,19 +1,19 @@
 import React from "react";
+import { formatISO9075 } from "date-fns";
 
-function Post() {
+function Post({title, summary, cover, createdAt, author}) {
     return (
         <div className="post">
 			<div className = "image">
-				<img src="https://cdn.theatlantic.com/thumbor/FPTWEk2jCD_GOlSx-Q3p04tDPOk=/302x50:4317x2308/1600x900/media/img/mt/2014/08/shutterstock_187027727-1/original.jpg"/>
+				<img src={"http://localhost:5000/"+cover}/>
 			</div>
 			<div className="text">
-				<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+				<h2>{title}</h2>
 				<p className="info">
-					<a className="author">John Doe</a>
-					<time>2023-01-06 20:26</time>
+					<a className="author">{author.username}</a>
+					<time>{formatISO9075(new Date(createdAt))}</time>
 				</p>
-				<p className="Summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quia consectetur? Officia laboriosam quos quae error animi accusamus voluptate.
-				</p>
+				<p className="Summary">{summary}</p>
 			</div>
 	  	</div>
     );

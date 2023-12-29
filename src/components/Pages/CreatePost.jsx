@@ -33,14 +33,15 @@ function CreatePost() {
     const [redirect, setRedirect] = useState(false);
     async function createNewpost(ev) {
         const data = new FormData();
-        data.set('tiltle', title);
+        data.set('title', title);
         data.set('summary', summary);
         data.set('content', content);
         data.set('file', files[0]);
         ev.preventDefault();
         const response = await fetch("http://localhost:5000/post", {
             method: 'POST',
-            body: data
+            body: data,
+            credentials: "include"
         });
         if(response.ok) {
             setRedirect(true);
