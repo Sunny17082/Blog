@@ -8,6 +8,8 @@ import LoginPage from './components/Pages/LoginPage';
 import RegisterPage from './components/Pages/RegisterPage';
 import { UserContextProvider } from './components/UserContext';
 import CreatePost from './components/Pages/CreatePost';
+import PostPage from './components/Pages/PostPage';
+import EditPost from './components/Pages/EditPost';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
 				<Route path='/login' element = {<LoginPage/>}/>
 				<Route path='/register' element = {<RegisterPage/>}/>
 				<Route path='/create' element = {<CreatePost/>}/>
+				<Route path='/post/:id' element = {<PostPage/>}/>
+				<Route path='/edit/:id' element = {<EditPost/>}/>
 			</Route>
 		</Routes>
 	</UserContextProvider>
